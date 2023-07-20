@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kalkulator BMI</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <div class="mainCardContainer">
+      <p id="error">yahh error:(</p>
+      <div class="cardSection">
+        <!-- section kiri -->
+        <div class="hasilSection">
+          <!-- hasil section atas -->
+          <div class="tableHasilSection" id="hasilSectionAtas">
+            <div class="hasilAtas">
+              <h1>BMI KALKULATOR</h1>
+              <p>
+                Body Mass Index atau BMI adalah suatu ukuran yang digunakan
+                untuk menunjukkan kategori berat badan seseorang. Metode
+                perhitungan ini awalnya dikembangkan pada abad 19 oleh Adolphe
+                Quetelet Adapun istilah lain dalam menyebut BMI adalah
+                indeks massa tubuh (IMT).
+              </p>
+            </div>
+          </div>
+
+          <!-- hasil section bawah -->
+          <div class="tableHasilSection" id="hasilSectionBawah">
+            <div class="hasilBawah">
+              <!-- nilai -->
+              <div class="nilaiSection">
+                <h2 id="nilaiBMI"></h2>
+                <h3 id="kategori"></h3>
+              </div>
+              <!-- deskripsi -->
+              <div class="penjelasanSection">
+                <p id="saran"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section kanan -->
+        <div class="inputSection">
+          <!-- input form jenis kelamin -->
+          <div class="tableInputSection">
+            <div class="rowWidth">
+              <label for="">Jenis Kelamin</label>
+            </div>
+            <div class="rowWidth">
+              <div class="cellWidth">
+                <div class="btn" id="radio">
+                  <input
+                    type="radio"
+                    name="radio"
+                    class="radio"
+                    id="RadioLakiLaki"
+                    value="Laki-laki"
+                    onclick=""
+                    checked=""
+                  />
+                  <label for="">Laki laki</label>
+                </div>
+              </div>
+              <div class="cellWidth">
+                <div class="btn" id="radio">
+                  <input
+                    type="radio"
+                    name="radio"
+                    class="radio"
+                    id="radioPerempuan"
+                    value="Perempuan"
+                  />
+                  <label for="">Perempuan</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- input form usia -->
+          <div class="tableInputSection">
+            <div class="rowWidth">
+              <label for="usia">Usia (tahun)</label>
+            </div>
+            <div class="rowWidth">
+              <input type="number" name="usia" class="input" id="inputUsia" />
+            </div>
+          </div>
+
+          <!-- input form berat badan -->
+          <div class="tableInputSection">
+            <div class="rowWidth">
+              <label for="">Berat Badan (kg)</label>
+            </div>
+            <div class="rowWidth">
+              <input
+                type="number"
+                name=""
+                class="input"
+                id="inputBeratBadan"
+                value=""
+              />
+            </div>
+          </div>
+
+          <!-- input form tinggi badan -->
+          <div class="tableInputSection">
+            <div class="rowWidth">
+              <label for="">Tinggi Badan (cm)</label>
+            </div>
+            <div class="rowWidth">
+              <input
+                type="number"
+                name=""
+                class="input"
+                id="inputTinggiBadan"
+              />
+            </div>
+          </div>
+
+          <!-- button submit/reset  -->
+          <div class="tableInputSection">
+            <div class="cellWidth">
+              <input
+                class="btn"
+                id="submitBtn"
+                type="submit"
+                value="Submit"
+                onclick="submit()"
+              />
+            </div>
+            <div class="cellWidth">
+              <button class="btn" id="resetBtn" onclick="reset()">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
